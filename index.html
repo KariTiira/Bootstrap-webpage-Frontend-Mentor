@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Inter">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    :root {
+    --bs-nav-link-color: black !important;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution p {font-size: 15px; }
+    .nav-link:hover {
+      color:hsl(5, 85%, 63%) !important;}
+    .btn {
+      border-radius: 0px !important;
+    }
+    .btn:hover {
+      background-color: black !important;
+      color: hsl(36, 100%, 99%);}
+    .card-subtitle:hover {
+      color: hsl(35, 77%, 62%);}
+    .card-subtitle-red:hover {
+      color: hsl(5, 85%, 63%);}
+    
+  </style>
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm">
+    <div class="container">
+      <img src="assets/images/logo.svg" alt="">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="nav">
+        <div class="offcanvas offcanvas-end align-items-sm-end" id="nav">
+          <button type="button" class="btn-close d-block d-sm-none align-self-end fs-1 m-3" data-bs-dismiss="offcanvas"></button>
+          <div class="offcanvas-body"">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">New</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Popular</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Trending</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Categories</a>
+              </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  
+
+  <div class="container">
+    <div class="row row-cols-1 row-sm-cols-2">
+      <div class="col col-sm-8">
+        <div class="box col">
+          <img class="card-img" src="assets/images/image-web-3-desktop.jpg" alt="">
+          <div class="row row-cols-1 row-cols-sm-2">
+                <div class="col">
+                  <div class="box" style="margin-left: 10px;">
+                    <h1 class="fw-bold" style="font-size: 3rem;">The Bright Future of Web 3.0?</h1>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="box">
+                    <p class="fs-6" style=" color: hsl(236, 13%, 42%);">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+                      But is it really fulfilling its promise?</p>
+                  </div>
+                  <button class="btn fw-bold" style="background-color: hsl(5, 85%, 63%); border: none !important; padding: 10px; text-transform: uppercase; width: 170px;">Read more</button>
+                </div>
+          </div>
+        </div>
+      </div> 
+      <div class="col col-sm-4">
+        <div class="box col">
+          <div class="card text-bg-dark rounded-0 my-5 my-sm-0">
+            <div class="card-body" style="color: white; display:grid;">
+              <h2 class="card-title" style="color: hsl(35, 77%, 62%);">New</h2>
+              <div class="box border-bottom py-3">
+                  <h5 class="card-subtitle">Hydrogen VS Electric Cars</h5>
+                  <p style="color:hsl(233, 8%, 79%);">Will hydrogen-fueled cars ever catch up to EVs?</p>
+              </div>
+              <div class="box border-bottom py-3">
+                <h5 class="card-subtitle">The Downsides of AI Artistry</h5>
+                <p style="color:hsl(233, 8%, 79%);">What are the possible adverse effects of on-demand AI image generation?</p>
+              </div>
+              <div class="box pt-3">
+                <h5 class="card-subtitle">Is VC Funding Drying Up?</h5>
+                <p style="color:hsl(233, 8%, 79%);">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-3">
+      <div class="col">
+        <div class="box">
+          <div class="card border-0">
+            <div class="card-body">
+              <img class="card-image" style="width: 100px; float: left; margin-right: 1rem;" src="assets/images/image-retro-pcs.jpg">
+              <h2 class="card-title fw-bold" style="color: hsl(5, 85%, 63%);">01</h2>
+              <h5 class="card-subtitle-red fw-bold" style="padding: 4px;">Reviving Retro PCs</h5>
+              <div class="card-text" style="color: hsl(236, 13%, 42%);">What happens when old PCs are given modern upgrades?</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="box">
+          <div class="card border-0">
+            <div class="card-body">
+              <img class="card-image" style="width: 100px; float: left; margin-right: 1rem;" src="assets/images/image-top-laptops.jpg">
+              <h2 class="card-title fw-bold" style="color: hsl(5, 85%, 63%);">02</h2>
+              <h5 class="card-subtitle-red fw-bold" style="padding: 4px;">Top 10 Laptops of 2022</h5>
+              <div class="card-text" style="color: hsl(236, 13%, 42%);">Our best picks for various needs and budgets.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="box">
+          <div class="card border-0">
+            <div class="card-body">
+              <img class="card-image" style="width: 100px; float: left; margin-right: 1rem;" src="assets/images/image-gaming-growth.jpg">
+              <h2 class="card-title fw-bold" style="color: hsl(5, 85%, 63%);">03</h2>
+              <h5 class="card-subtitle-red fw-bold" style="padding: 4px;">The Growth of Gaming</h5>
+              <div class="card-text" style="color: hsl(236, 13%, 42%);">How the pandemic has sparked fresh opportunities.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>         
+</div>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Kati Räsänen</a>.
+  </div>
+</body>
+</html>
